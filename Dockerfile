@@ -12,7 +12,7 @@ EXPOSE 22
 CMD ["/usr/sbin/sshd","-D"]
 
 # docker build -t muralidhar123/nginxssh:v1 .
-# trivy image muralidhar123/nginxssh:latest --format table > scan_vul
+# trivy image muralidhar123/nginxssh:latest --format json --output scan_vul.json
 # docker container run --name nginx -d -p 31282:22 muralidhar123/nginxssh:v1
 # docker tag muralidhar123/nginxssh:v1 muralidhar123/nginxssh:latest
 # ssh satya@172.17.0.1 -p 31282
